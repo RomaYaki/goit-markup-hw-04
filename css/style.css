@@ -2,7 +2,6 @@
   --main-background-color: #ffffff;
   --sec-background-color: #f5f4fa;
   --dark-background-color: #2f303a;
-
   --accent-color: #2196f3;
   --text-color: #212121;
   --text-hero: #ffffff;
@@ -132,9 +131,13 @@ header {
 }
 
 /* ГЕРОЙ */
+.hero-section {
+}
 
-.hero {
+.hero-container {
+  background-image: url(../photo/hero-overlay-after.jpg);
   background-color: var(--dark-background-color);
+  background-position: center;
 
   margin-left: auto;
   margin-right: auto;
@@ -145,9 +148,13 @@ header {
   padding-bottom: 200px;
 }
 
+.hero-text-container {
+  width: 696px;
+  margin: 0 auto;
+}
+
 .hero-text {
   color: var(--text-hero);
-
   font-family: Roboto;
   font-size: 44px;
   font-style: normal;
@@ -157,6 +164,7 @@ header {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 /* Hero Buttons */
 
 .hero-button {
@@ -182,14 +190,6 @@ header {
   text-align: center;
   text-decoration: none;
   line-height: 1px;
-}
-
-.overlay {
-  height: 600px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../photo/);
 }
 
 /* преимущества */
@@ -250,6 +250,7 @@ p {
 
 .wwd-section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .wwd-container {
@@ -289,6 +290,7 @@ p {
 .team-section {
   padding-bottom: 94px;
   margin-top: 94px;
+  background-color: var(--sec-background-color);
 }
 
 .team-container {
@@ -297,8 +299,6 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  background-color: var(--sec-background-color);
 }
 
 .team-text {
