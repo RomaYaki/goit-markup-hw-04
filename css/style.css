@@ -131,11 +131,14 @@ header {
 }
 
 /* ГЕРОЙ */
-.hero-section {
-}
 
 .hero-container {
-  background-image: url(../photo/hero-overlay-after.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../photo/hero-overlay-after.jpg);
   background-color: var(--dark-background-color);
   background-position: center;
 
