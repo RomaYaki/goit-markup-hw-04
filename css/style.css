@@ -292,7 +292,6 @@ p {
 
 .team-section {
   padding-bottom: 94px;
-  margin-top: 94px;
   background-color: var(--sec-background-color);
 }
 
@@ -306,11 +305,11 @@ p {
 
 .team-text {
   margin: 0;
-  padding-top: 94px;
 }
 
 .team {
   padding: 0px;
+  margin: 0px;
   font-family: Roboto;
   font-size: 36px;
   font-style: normal;
@@ -322,7 +321,6 @@ p {
 
 .team-ul {
   padding-top: 50px;
-  padding-bottom: 94px;
   display: flex;
   padding-left: 0px;
 }
@@ -361,7 +359,7 @@ p {
 
 /* FOOTER */
 
-.footer-section {
+footer {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
