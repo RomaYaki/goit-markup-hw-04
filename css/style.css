@@ -7,6 +7,7 @@
   --text-hero: #ffffff;
   --sec-text-color: #757575;
   --portfolio-buttons: #f5f4fa;
+  --social-icons: #afb1b8;
 }
 
 body {
@@ -103,9 +104,15 @@ header {
   color: var(--accent-color);
 }
 
+/* ADDRRES */
+
 .head-add {
   display: flex;
   margin-left: auto;
+}
+
+.tel-icon {
+  margin-right: 10px;
 }
 
 .head-add .add-li + .add-li {
@@ -113,7 +120,9 @@ header {
 }
 
 .add-link {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -196,6 +205,18 @@ header {
 }
 
 /* преимущества */
+
+.back-best {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--sec-background-color);
+}
 
 .best-section {
   padding-top: 94px;
@@ -290,6 +311,42 @@ p {
 
 /* TEAM */
 
+.social-block > .social-li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-block {
+  padding-left: 32px;
+  padding-bottom: 30px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-link {
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  color: var(--social-icons);
+  background-color: var(--main-background-color);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+}
+
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -321,13 +378,13 @@ p {
 }
 
 .team-ul {
+  justify-content: center;
   padding-top: 50px;
   display: flex;
   padding-left: 0px;
 }
 
 .team-li {
-  height: 368px;
   background-color: var(--main-background-color);
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -358,6 +415,51 @@ p {
   text-align: center;
 }
 
+/* CLIENTS */
+
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clients-ul > .clients-li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients-ul {
+  justify-content: center;
+  padding-top: 50px;
+  display: flex;
+  padding-left: 0px;
+}
+
+.clients-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--social-icons);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
 /* FOOTER */
 
 footer {
@@ -374,6 +476,61 @@ footer {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+  align-items: baseline;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.footer-addres {
+  display: inline-block;
+}
+
+.footer-social {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+.follow-text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.foot-txt {
+  padding-bottom: 20px;
+}
+
+.social-block-footer {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-link-footer {
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  color: var(--social-icons);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+}
+
+.social-block-footer > .social-li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-logo {
@@ -512,6 +669,10 @@ footer {
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+}
+
+.photo-element:focus,
+.photo-element:hover {
 }
 
 .Portfolio-text {
